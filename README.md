@@ -18,6 +18,10 @@ Microservicio en .NET 9.0.105 que implementa un CRUD completo de usuarios con si
 ```bash
 dotnet restore
 dotnet run --project MicroservicioXia.API
+
+cd MicroservicioXia.Admin
+nom install
+npm run dev
 ```
 
 ## Endpoints Principales
@@ -41,3 +45,5 @@ dotnet run --project MicroservicioXia.API
 ## Documentación
 
 Accede a Swagger en: `https://localhost:7001/swagger` 
+
+Accede al FronEnd en `http://localhost:5173`

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MicroservicioXia.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9651f7cbffe9b878b52784a076714a7759db71af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ae2c883960f8e5af0cf1c3d1013917f0b90b008")]
 [assembly: System.Reflection.AssemblyProductAttribute("MicroservicioXia.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MicroservicioXia.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -140,5 +140,75 @@ namespace MicroservicioXia.API.Controllers
                 return StatusCode(500, new { message = "Error interno del servidor", error = ex.Message });
             }
         }
+
+        // Endpoints para administrador
+        [HttpPost("admin/login")]
+        public async Task<ActionResult<AdminLoginResponseDto>> AdminLogin([FromBody] AdminLoginDto loginDto)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+
+                var loginResult = await _userService.AdminLoginAsync(loginDto);
+                if (loginResult == null)
+                    return Unauthorized(new { message = "Credenciales inválidas o usuario no es administrador" });
+
+                return Ok(loginResult);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Error interno del servidor", error = ex.Message });
+            }
+        }
+
+        [HttpPost("admin/create")]
+        public async Task<ActionResult> CreateAdmin([FromBody] CreateUserDto createUserDto)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+
+                var result = await _userService.CreateAdminAsync(createUserDto);
+                if (!result)
+                    return BadRequest(new { message = "No se pudo crear el administrador" });
+
+                return Ok(new { message = "Administrador creado exitosamente" });
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Error interno del servidor", error = ex.Message });
+            }
+        }
+
+        [HttpPut("{id}/role")]
+        public async Task<ActionResult> UpdateUserRole(string id, [FromBody] UpdateUserRoleDto updateRoleDto)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+
+                var result = await _userService.UpdateUserRoleAsync(id, updateRoleDto.Role);
+                if (!result)
+                    return NotFound(new { message = "Usuario no encontrado" });
+
+                return Ok(new { message = "Rol actualizado exitosamente" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Error interno del servidor", error = ex.Message });
+            }
+        }
+    }
+
+    public class UpdateUserRoleDto
+    {
+        public string Role { get; set; } = string.Empty;
     }
 } 

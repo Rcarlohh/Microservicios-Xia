@@ -11,5 +11,10 @@ namespace MicroservicioXia.Application.Services
         Task<bool> DeleteUserAsync(string id);
         Task<PasswordRecoveryDto?> GetPasswordRecoveryQuestionsAsync(string email);
         Task<bool> ResetPasswordAsync(PasswordResetDto passwordResetDto);
+        
+        // Métodos para administrador
+        Task<AdminLoginResponseDto?> AdminLoginAsync(AdminLoginDto loginDto);
+        Task<bool> CreateAdminAsync(CreateUserDto createUserDto);
+        Task<bool> UpdateUserRoleAsync(string id, string role);
     }
 } 

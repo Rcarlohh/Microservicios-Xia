@@ -24,6 +24,9 @@ namespace MicroservicioXia.Core.Entities
         [BsonElement("lastName")]
         public string LastName { get; set; } = string.Empty;
         
+        [BsonElement("role")]
+        public string Role { get; set; } = "User"; // "User" o "Admin"
+        
         [BsonElement("isActive")]
         public bool IsActive { get; set; } = true;
         

@@ -49,4 +49,29 @@ namespace MicroservicioXia.Core.DTOs
         public string NewPassword { get; set; } = string.Empty;
         public List<SecurityQuestionDto> SecurityQuestions { get; set; } = new List<SecurityQuestionDto>();
     }
+
+    // DTOs para autenticación de administrador
+    public class AdminLoginDto
+    {
+        public string Username { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+    }
+
+    public class AdminLoginResponseDto
+    {
+        public string Token { get; set; } = string.Empty;
+        public string Username { get; set; } = string.Empty;
+        public string Role { get; set; } = string.Empty;
+        public DateTime ExpiresAt { get; set; }
+    }
+
+    public class AdminUser
+    {
+        public string Id { get; set; } = string.Empty;
+        public string Username { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Role { get; set; } = string.Empty;
+        public bool IsActive { get; set; }
+        public DateTime CreatedAt { get; set; }
+    }
 } 

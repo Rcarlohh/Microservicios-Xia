@@ -52,12 +52,16 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-// Inicializar datos de preguntas de seguridad
+// Inicializar datos de preguntas de seguridad y usuario administrador
 using (var scope = app.Services.CreateScope())
 {
     var securityQuestionRepository = scope.ServiceProvider.GetRequiredService<ISecurityQuestionTemplateRepository>();
+    var userRepository = scope.ServiceProvider.GetRequiredService<IUserRepository>();
+    
     await DataInitializer.InitializeSecurityQuestions(securityQuestionRepository);
+    await DataInitializer.InitializeAdminUser(userRepository);
 }
+
 var url = "https://localhost:7226/swagger"; // O el puerto correcto según tu app
 
 try

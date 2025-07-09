@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "e10g8v9w33Q=",
+  "dgSpecHash": "DSRN6fL5TTs=",
   "success": true,
   "projectFilePath": "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.API\\MicroservicioXia.API.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,10 @@
     "C:\\Users\\range\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.7\\microsoft.extensions.dependencyinjection.abstractions.9.0.7.nupkg.sha512",
     "C:\\Users\\range\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\range\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.7\\microsoft.extensions.primitives.9.0.7.nupkg.sha512",
+    "C:\\Users\\range\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.4.0\\microsoft.identitymodel.abstractions.7.4.0.nupkg.sha512",
+    "C:\\Users\\range\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.4.0\\microsoft.identitymodel.jsonwebtokens.7.4.0.nupkg.sha512",
+    "C:\\Users\\range\\.nuget\\packages\\microsoft.identitymodel.logging\\7.4.0\\microsoft.identitymodel.logging.7.4.0.nupkg.sha512",
+    "C:\\Users\\range\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.4.0\\microsoft.identitymodel.tokens.7.4.0.nupkg.sha512",
     "C:\\Users\\range\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\range\\.nuget\\packages\\microsoft.openapi\\1.6.23\\microsoft.openapi.1.6.23.nupkg.sha512",
     "C:\\Users\\range\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
@@ -25,6 +29,7 @@
     "C:\\Users\\range\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\9.0.3\\swashbuckle.aspnetcore.swaggergen.9.0.3.nupkg.sha512",
     "C:\\Users\\range\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\9.0.3\\swashbuckle.aspnetcore.swaggerui.9.0.3.nupkg.sha512",
     "C:\\Users\\range\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\range\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.4.0\\system.identitymodel.tokens.jwt.7.4.0.nupkg.sha512",
     "C:\\Users\\range\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\range\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "C:\\Users\\range\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",

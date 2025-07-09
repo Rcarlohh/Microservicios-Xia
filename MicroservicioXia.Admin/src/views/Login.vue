@@ -3,21 +3,21 @@
     <v-container fluid fill-height>
       <v-row align="center" justify="center" no-gutters>
         <v-col cols="12" sm="10" md="8" lg="6" xl="4">
-          <v-card class="login-card" elevation="12">
-            <v-toolbar color="primary" dark flat>
-              <v-toolbar-title class="text-h5 font-weight-bold">
+          <v-card class="login-card" elevation="16">
+            <v-toolbar color="primary" dark flat class="login-toolbar">
+              <v-toolbar-title class="text-h4 font-weight-bold">
                 Panel de Administración
               </v-toolbar-title>
             </v-toolbar>
             
-            <v-card-text class="pa-6">
-              <div class="text-center mb-6">
-                <v-icon size="64" color="primary" class="mb-4">mdi-shield-account</v-icon>
-                <h2 class="text-h4 font-weight-light mb-2">Bienvenido</h2>
+            <v-card-text class="pa-8">
+              <div class="text-center mb-8">
+                <v-icon size="80" color="primary" class="mb-6">mdi-shield-account</v-icon>
+                <h2 class="text-h3 font-weight-light mb-4">Bienvenido</h2>
                 <p class="text-body-1 text-medium-emphasis">Ingresa tus credenciales de administrador</p>
               </div>
               
-              <v-form @submit.prevent="login" ref="form" class="mt-4">
+              <v-form @submit.prevent="login" ref="form" class="mt-6">
                 <v-text-field
                   v-model="loginData.username"
                   label="Usuario"
@@ -27,7 +27,8 @@
                   variant="outlined"
                   :rules="[rules.required]"
                   required
-                  class="mb-4"
+                  class="mb-6"
+                  size="large"
                 />
 
                 <v-text-field
@@ -39,22 +40,23 @@
                   variant="outlined"
                   :rules="[rules.required]"
                   required
-                  class="mb-6"
+                  class="mb-8"
+                  size="large"
                 />
               </v-form>
             </v-card-text>
             
-            <v-card-actions class="pa-6 pt-0">
+            <v-card-actions class="pa-8 pt-0">
               <v-btn
                 color="primary"
-                size="large"
+                size="x-large"
                 block
                 :loading="loading"
                 @click="login"
                 :disabled="!loginData.username || !loginData.password"
-                class="text-body-1 font-weight-medium"
+                class="text-body-1 font-weight-medium login-btn"
               >
-                <v-icon left>mdi-login</v-icon>
+                <v-icon left size="24">mdi-login</v-icon>
                 Iniciar Sesión
               </v-btn>
             </v-card-actions>
@@ -165,17 +167,45 @@ const login = async () => {
 }
 
 .login-card {
-  border-radius: 16px;
+  border-radius: 20px;
   overflow: hidden;
-  max-width: 450px;
+  max-width: 500px;
   width: 100%;
+  transition: all 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2) !important;
+}
+
+.login-toolbar {
+  padding: 16px 24px;
+}
+
+.login-btn {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  height: 56px;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Mejoras para pantallas grandes */
+@media (min-width: 1200px) {
+  .login-card {
+    max-width: 550px;
+  }
 }
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
   .login-card {
     margin: 16px;
-    border-radius: 12px;
+    border-radius: 16px;
   }
   
   .v-card-text {

@@ -1,14 +1,19 @@
 <template>
-  <div>
+  <div class="questions-container">
     <v-row>
       <v-col cols="12">
-        <div class="d-flex justify-space-between align-center">
-          <h1 class="text-h4">Gestión de Preguntas de Seguridad</h1>
+        <div class="d-flex justify-space-between align-center mb-8">
+          <div class="d-flex align-center">
+            <v-icon size="40" color="info" class="mr-4">mdi-help-circle</v-icon>
+            <h1 class="text-h3 font-weight-light">Gestión de Preguntas de Seguridad</h1>
+          </div>
           <v-btn
-            color="primary"
+            color="info"
+            size="large"
             @click="showCreateDialog = true"
+            class="create-btn"
           >
-            <v-icon left>mdi-help-plus</v-icon>
+            <v-icon left size="24">mdi-help-plus</v-icon>
             Crear Pregunta
           </v-btn>
         </div>
@@ -16,39 +21,45 @@
     </v-row>
 
     <!-- Filtros y búsqueda -->
-    <v-row class="mb-4">
-      <v-col cols="12" md="6">
+    <v-row class="mb-6">
+      <v-col cols="12" lg="6">
         <v-text-field
           v-model="search"
           label="Buscar preguntas..."
           prepend-icon="mdi-magnify"
           clearable
+          variant="outlined"
+          size="large"
         ></v-text-field>
       </v-col>
-      <v-col cols="12" md="3">
+      <v-col cols="12" lg="3">
         <v-select
           v-model="statusFilter"
           :items="statusOptions"
           label="Filtrar por estado"
           clearable
+          variant="outlined"
+          size="large"
         ></v-select>
       </v-col>
     </v-row>
 
     <!-- Tabla de preguntas -->
-    <v-card>
+    <v-card elevation="3" class="questions-table-card">
       <v-data-table
         :headers="headers"
         :items="filteredQuestions"
         :loading="loading"
         :search="search"
-        :items-per-page="10"
-        class="elevation-1"
+        :items-per-page="15"
+        class="elevation-0"
+        density="comfortable"
       >
         <template v-slot:item.isActive="{ item }">
           <v-chip
             :color="item.isActive ? 'success' : 'error'"
-            small
+            size="small"
+            variant="flat"
           >
             {{ item.isActive ? 'Activa' : 'Inactiva' }}
           </v-chip>
@@ -59,34 +70,40 @@
         </template>
 
         <template v-slot:item.actions="{ item }">
-          <v-btn
-            icon
-            small
-            color="primary"
-            @click="editQuestion(item)"
-          >
-            <v-icon>mdi-pencil</v-icon>
-          </v-btn>
-          <v-btn
-            icon
-            small
-            color="error"
-            @click="deleteQuestion(item)"
-          >
-            <v-icon>mdi-delete</v-icon>
-          </v-btn>
+          <div class="d-flex gap-2">
+            <v-btn
+              icon
+              size="small"
+              color="primary"
+              variant="text"
+              @click="editQuestion(item)"
+              class="action-btn"
+            >
+              <v-icon>mdi-pencil</v-icon>
+            </v-btn>
+            <v-btn
+              icon
+              size="small"
+              color="error"
+              variant="text"
+              @click="deleteQuestion(item)"
+              class="action-btn"
+            >
+              <v-icon>mdi-delete</v-icon>
+            </v-btn>
+          </div>
         </template>
       </v-data-table>
     </v-card>
 
     <!-- Diálogo para crear/editar pregunta -->
-    <v-dialog v-model="showCreateDialog" max-width="600px">
+    <v-dialog v-model="showCreateDialog" max-width="700px">
       <v-card>
-        <v-card-title>
+        <v-card-title class="pa-6">
           <span class="text-h5">{{ editingQuestion ? 'Editar Pregunta' : 'Crear Pregunta' }}</span>
         </v-card-title>
 
-        <v-card-text>
+        <v-card-text class="pa-6">
           <v-form ref="form" v-model="valid">
             <v-row>
               <v-col cols="12" sm="6">
@@ -96,6 +113,8 @@
                   type="number"
                   :rules="[rules.required, rules.positive]"
                   required
+                  variant="outlined"
+                  size="large"
                 ></v-text-field>
               </v-col>
               <v-col cols="12">
@@ -104,31 +123,36 @@
                   label="Pregunta"
                   :rules="[rules.required]"
                   required
-                  rows="3"
+                  rows="4"
+                  variant="outlined"
+                  size="large"
                 ></v-textarea>
               </v-col>
               <v-col cols="12">
                 <v-switch
                   v-model="questionForm.isActive"
                   label="Pregunta Activa"
+                  color="info"
                 ></v-switch>
               </v-col>
             </v-row>
           </v-form>
         </v-card-text>
 
-        <v-card-actions>
+        <v-card-actions class="pa-6 pt-0">
           <v-spacer></v-spacer>
           <v-btn
-            color="blue darken-1"
-            text
+            color="grey"
+            variant="text"
+            size="large"
             @click="showCreateDialog = false"
           >
             Cancelar
           </v-btn>
           <v-btn
-            color="blue darken-1"
-            text
+            color="info"
+            variant="elevated"
+            size="large"
             @click="saveQuestion"
             :loading="saving"
             :disabled="!valid"
@@ -140,19 +164,19 @@
     </v-dialog>
 
     <!-- Diálogo de confirmación para eliminar -->
-    <v-dialog v-model="showDeleteDialog" max-width="400px">
+    <v-dialog v-model="showDeleteDialog" max-width="500px">
       <v-card>
-        <v-card-title class="text-h5">Confirmar Eliminación</v-card-title>
-        <v-card-text>
+        <v-card-title class="text-h5 pa-6">Confirmar Eliminación</v-card-title>
+        <v-card-text class="pa-6">
           ¿Está seguro de que desea eliminar la pregunta "{{ questionToDelete?.question }}"?
           Esta acción no se puede deshacer.
         </v-card-text>
-        <v-card-actions>
+        <v-card-actions class="pa-6 pt-0">
           <v-spacer></v-spacer>
-          <v-btn color="blue darken-1" text @click="showDeleteDialog = false">
+          <v-btn color="grey" variant="text" size="large" @click="showDeleteDialog = false">
             Cancelar
           </v-btn>
-          <v-btn color="error" text @click="confirmDelete" :loading="deleting">
+          <v-btn color="error" variant="elevated" size="large" @click="confirmDelete" :loading="deleting">
             Eliminar
           </v-btn>
         </v-card-actions>
@@ -328,4 +352,57 @@ const confirmDelete = async () => {
 onMounted(() => {
   loadQuestions()
 })
-</script> 
+</script>
+
+<style scoped>
+.questions-container {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.create-btn {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.create-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.questions-table-card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.action-btn {
+  transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+  transform: scale(1.1);
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+/* Mejoras para pantallas grandes */
+@media (min-width: 1200px) {
+  .questions-container {
+    padding: 40px;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .questions-container {
+    padding: 16px;
+  }
+  
+  .create-btn {
+    font-size: 0.9rem;
+  }
+}
+</style> 

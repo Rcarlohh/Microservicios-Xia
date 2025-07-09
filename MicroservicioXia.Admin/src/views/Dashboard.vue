@@ -1,30 +1,31 @@
 <template>
-  <div>
+  <div class="dashboard-container">
     <v-row>
       <v-col cols="12">
-        <div class="d-flex align-center mb-6">
-          <v-icon size="32" color="primary" class="mr-3">mdi-view-dashboard</v-icon>
-          <h1 class="text-h4 font-weight-light">Dashboard de Administración</h1>
+        <div class="d-flex align-center mb-8">
+          <v-icon size="40" color="primary" class="mr-4">mdi-view-dashboard</v-icon>
+          <h1 class="text-h3 font-weight-light">Dashboard de Administración</h1>
         </div>
       </v-col>
     </v-row>
 
     <!-- Tarjetas de estadísticas -->
-    <v-row>
-      <v-col cols="12" sm="6" md="3">
-        <v-card class="mx-auto stats-card" elevation="2">
-          <v-card-text class="text-center pa-6">
-            <v-icon size="48" color="primary" class="mb-3">mdi-account-group</v-icon>
-            <div class="text-h3 font-weight-bold text-primary mb-2">
+    <v-row class="mb-8">
+      <v-col cols="12" sm="6" lg="3">
+        <v-card class="mx-auto stats-card" elevation="3">
+          <v-card-text class="text-center pa-8">
+            <v-icon size="56" color="primary" class="mb-4">mdi-account-group</v-icon>
+            <div class="text-h2 font-weight-bold text-primary mb-3">
               {{ stats.totalUsers }}
             </div>
-            <div class="text-subtitle-1 text-medium-emphasis">Total de Usuarios</div>
+            <div class="text-h6 text-medium-emphasis">Total de Usuarios</div>
           </v-card-text>
-          <v-card-actions class="pa-4 pt-0">
+          <v-card-actions class="pa-6 pt-0">
             <v-btn
               color="primary"
               variant="text"
               block
+              size="large"
               @click="$router.push('/users')"
             >
               Ver Usuarios
@@ -34,32 +35,33 @@
         </v-card>
       </v-col>
 
-      <v-col cols="12" sm="6" md="3">
-        <v-card class="mx-auto stats-card" elevation="2">
-          <v-card-text class="text-center pa-6">
-            <v-icon size="48" color="success" class="mb-3">mdi-account-check</v-icon>
-            <div class="text-h3 font-weight-bold text-success mb-2">
+      <v-col cols="12" sm="6" lg="3">
+        <v-card class="mx-auto stats-card" elevation="3">
+          <v-card-text class="text-center pa-8">
+            <v-icon size="56" color="success" class="mb-4">mdi-account-check</v-icon>
+            <div class="text-h2 font-weight-bold text-success mb-3">
               {{ stats.activeUsers }}
             </div>
-            <div class="text-subtitle-1 text-medium-emphasis">Usuarios Activos</div>
+            <div class="text-h6 text-medium-emphasis">Usuarios Activos</div>
           </v-card-text>
         </v-card>
       </v-col>
 
-      <v-col cols="12" sm="6" md="3">
-        <v-card class="mx-auto stats-card" elevation="2">
-          <v-card-text class="text-center pa-6">
-            <v-icon size="48" color="info" class="mb-3">mdi-help-circle</v-icon>
-            <div class="text-h3 font-weight-bold text-info mb-2">
+      <v-col cols="12" sm="6" lg="3">
+        <v-card class="mx-auto stats-card" elevation="3">
+          <v-card-text class="text-center pa-8">
+            <v-icon size="56" color="info" class="mb-4">mdi-help-circle</v-icon>
+            <div class="text-h2 font-weight-bold text-info mb-3">
               {{ stats.totalQuestions }}
             </div>
-            <div class="text-subtitle-1 text-medium-emphasis">Preguntas de Seguridad</div>
+            <div class="text-h6 text-medium-emphasis">Preguntas de Seguridad</div>
           </v-card-text>
-          <v-card-actions class="pa-4 pt-0">
+          <v-card-actions class="pa-6 pt-0">
             <v-btn
               color="info"
               variant="text"
               block
+              size="large"
               @click="$router.push('/security-questions')"
             >
               Ver Preguntas
@@ -69,26 +71,26 @@
         </v-card>
       </v-col>
 
-      <v-col cols="12" sm="6" md="3">
-        <v-card class="mx-auto stats-card" elevation="2">
-          <v-card-text class="text-center pa-6">
-            <v-icon size="48" color="warning" class="mb-3">mdi-help-circle-outline</v-icon>
-            <div class="text-h3 font-weight-bold text-warning mb-2">
+      <v-col cols="12" sm="6" lg="3">
+        <v-card class="mx-auto stats-card" elevation="3">
+          <v-card-text class="text-center pa-8">
+            <v-icon size="56" color="warning" class="mb-4">mdi-help-circle-outline</v-icon>
+            <div class="text-h2 font-weight-bold text-warning mb-3">
               {{ stats.activeQuestions }}
             </div>
-            <div class="text-subtitle-1 text-medium-emphasis">Preguntas Activas</div>
+            <div class="text-h6 text-medium-emphasis">Preguntas Activas</div>
           </v-card-text>
         </v-card>
       </v-col>
     </v-row>
 
     <!-- Gráficos y tablas -->
-    <v-row class="mt-8">
-      <v-col cols="12" lg="6">
-        <v-card elevation="2">
-          <v-card-title class="d-flex align-center">
-            <v-icon left color="primary">mdi-account-group</v-icon>
-            <span class="text-h6">Usuarios Recientes</span>
+    <v-row class="mb-8">
+      <v-col cols="12" xl="6">
+        <v-card elevation="3" class="h-100">
+          <v-card-title class="d-flex align-center pa-6">
+            <v-icon left color="primary" size="28">mdi-account-group</v-icon>
+            <span class="text-h5">Usuarios Recientes</span>
           </v-card-title>
           <v-card-text class="pa-0">
             <v-data-table
@@ -97,7 +99,7 @@
               :loading="loading"
               :items-per-page="5"
               class="elevation-0"
-              density="compact"
+              density="comfortable"
             >
               <template v-slot:item.isActive="{ item }">
                 <v-chip
@@ -116,11 +118,11 @@
         </v-card>
       </v-col>
 
-      <v-col cols="12" lg="6">
-        <v-card elevation="2">
-          <v-card-title class="d-flex align-center">
-            <v-icon left color="info">mdi-help-circle</v-icon>
-            <span class="text-h6">Preguntas de Seguridad</span>
+      <v-col cols="12" xl="6">
+        <v-card elevation="3" class="h-100">
+          <v-card-title class="d-flex align-center pa-6">
+            <v-icon left color="info" size="28">mdi-help-circle</v-icon>
+            <span class="text-h5">Preguntas de Seguridad</span>
           </v-card-title>
           <v-card-text class="pa-0">
             <v-data-table
@@ -129,7 +131,7 @@
               :loading="loading"
               :items-per-page="5"
               class="elevation-0"
-              density="compact"
+              density="comfortable"
             >
               <template v-slot:item.isActive="{ item }">
                 <v-chip
@@ -147,25 +149,25 @@
     </v-row>
 
     <!-- Acciones rápidas -->
-    <v-row class="mt-8">
+    <v-row>
       <v-col cols="12">
-        <v-card elevation="2">
-          <v-card-title class="d-flex align-center">
-            <v-icon left color="warning">mdi-lightning-bolt</v-icon>
-            <span class="text-h6">Acciones Rápidas</span>
+        <v-card elevation="3">
+          <v-card-title class="d-flex align-center pa-6">
+            <v-icon left color="warning" size="28">mdi-lightning-bolt</v-icon>
+            <span class="text-h5">Acciones Rápidas</span>
           </v-card-title>
-          <v-card-text>
+          <v-card-text class="pa-6">
             <v-row>
               <v-col cols="12" sm="6" md="3">
                 <v-btn
                   color="primary"
                   variant="elevated"
                   block
-                  size="large"
+                  size="x-large"
                   @click="$router.push('/users')"
-                  class="mb-2"
+                  class="mb-3 action-btn"
                 >
-                  <v-icon left>mdi-account-plus</v-icon>
+                  <v-icon left size="24">mdi-account-plus</v-icon>
                   Crear Usuario
                 </v-btn>
               </v-col>
@@ -174,11 +176,11 @@
                   color="info"
                   variant="elevated"
                   block
-                  size="large"
+                  size="x-large"
                   @click="$router.push('/security-questions')"
-                  class="mb-2"
+                  class="mb-3 action-btn"
                 >
-                  <v-icon left>mdi-help-plus</v-icon>
+                  <v-icon left size="24">mdi-help-plus</v-icon>
                   Crear Pregunta
                 </v-btn>
               </v-col>
@@ -187,12 +189,12 @@
                   color="success"
                   variant="elevated"
                   block
-                  size="large"
+                  size="x-large"
                   @click="refreshData"
-                  class="mb-2"
+                  class="mb-3 action-btn"
                   :loading="loading"
                 >
-                  <v-icon left>mdi-refresh</v-icon>
+                  <v-icon left size="24">mdi-refresh</v-icon>
                   Actualizar Datos
                 </v-btn>
               </v-col>
@@ -201,11 +203,11 @@
                   color="warning"
                   variant="elevated"
                   block
-                  size="large"
+                  size="x-large"
                   @click="exportData"
-                  class="mb-2"
+                  class="mb-3 action-btn"
                 >
-                  <v-icon left>mdi-download</v-icon>
+                  <v-icon left size="24">mdi-download</v-icon>
                   Exportar Datos
                 </v-btn>
               </v-col>
@@ -301,18 +303,52 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.dashboard-container {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .stats-card {
-  border-radius: 12px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  min-height: 200px;
 }
 
 .stats-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
 }
 
 .v-card {
+  border-radius: 16px;
+}
+
+.action-btn {
   border-radius: 12px;
+  transition: all 0.3s ease;
+  height: 60px;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+/* Mejoras para pantallas grandes */
+@media (min-width: 1200px) {
+  .dashboard-container {
+    padding: 40px;
+  }
+  
+  .stats-card {
+    min-height: 220px;
+  }
 }
 
 /* Responsive adjustments */
@@ -323,6 +359,10 @@ onMounted(() => {
   
   .stats-card {
     margin-bottom: 16px;
+  }
+  
+  .dashboard-container {
+    padding: 16px;
   }
 }
 </style> 

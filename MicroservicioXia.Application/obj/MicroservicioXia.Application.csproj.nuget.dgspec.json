@@ -1,36 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Application/MicroservicioXia.Application.csproj": {}
+    "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Application\\MicroservicioXia.Application.csproj": {}
   },
   "projects": {
-    "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Application/MicroservicioXia.Application.csproj": {
+    "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Application\\MicroservicioXia.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Application/MicroservicioXia.Application.csproj",
+        "projectUniqueName": "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Application\\MicroservicioXia.Application.csproj",
         "projectName": "MicroservicioXia.Application",
-        "projectPath": "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Application/MicroservicioXia.Application.csproj",
-        "packagesPath": "/home/chars/.nuget/packages/",
-        "outputPath": "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Application/obj/",
+        "projectPath": "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Application\\MicroservicioXia.Application.csproj",
+        "packagesPath": "C:\\Users\\range\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/chars/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\range\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Core/MicroservicioXia.Core.csproj": {
-                "projectPath": "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Core/MicroservicioXia.Core.csproj"
+              "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Core\\MicroservicioXia.Core.csproj": {
+                "projectPath": "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Core\\MicroservicioXia.Core.csproj"
               },
-              "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Infrastructure/MicroservicioXia.Infrastructure.csproj": {
-                "projectPath": "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Infrastructure/MicroservicioXia.Infrastructure.csproj"
+              "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Infrastructure\\MicroservicioXia.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Infrastructure\\MicroservicioXia.Infrastructure.csproj"
               }
             }
           }
@@ -45,11 +51,17 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,37 +73,37 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.4, 9.0.4]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.105/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Core/MicroservicioXia.Core.csproj": {
+    "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Core\\MicroservicioXia.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Core/MicroservicioXia.Core.csproj",
+        "projectUniqueName": "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Core\\MicroservicioXia.Core.csproj",
         "projectName": "MicroservicioXia.Core",
-        "projectPath": "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Core/MicroservicioXia.Core.csproj",
-        "packagesPath": "/home/chars/.nuget/packages/",
-        "outputPath": "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Core/obj/",
+        "projectPath": "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Core\\MicroservicioXia.Core.csproj",
+        "packagesPath": "C:\\Users\\range\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/chars/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\range\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -110,11 +122,21 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -126,45 +148,45 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.4, 9.0.4]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.105/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Infrastructure/MicroservicioXia.Infrastructure.csproj": {
+    "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Infrastructure\\MicroservicioXia.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Infrastructure/MicroservicioXia.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Infrastructure\\MicroservicioXia.Infrastructure.csproj",
         "projectName": "MicroservicioXia.Infrastructure",
-        "projectPath": "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Infrastructure/MicroservicioXia.Infrastructure.csproj",
-        "packagesPath": "/home/chars/.nuget/packages/",
-        "outputPath": "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Infrastructure/obj/",
+        "projectPath": "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Infrastructure\\MicroservicioXia.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\range\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/chars/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\range\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Core/MicroservicioXia.Core.csproj": {
-                "projectPath": "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Core/MicroservicioXia.Core.csproj"
+              "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Core\\MicroservicioXia.Core.csproj": {
+                "projectPath": "C:\\Users\\range\\Source\\Repos\\Microservicios-Xia\\MicroservicioXia.Core\\MicroservicioXia.Core.csproj"
               }
             }
           }
@@ -179,15 +201,23 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[3.4.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
             }
           },
           "imports": [
@@ -201,18 +231,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.4, 9.0.4]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.105/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

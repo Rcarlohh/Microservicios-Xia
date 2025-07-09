@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "Ynf4ha2LunBzE/LC3t4jvQN9/tySZz8XME2OMRXCDDY=",
+  "Source": "MicroservicioXia.API",
+  "BasePath": "_content/MicroservicioXia.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,16 @@
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Infrastructure\obj\Debug\net9.0\MicroservicioXia.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Infrastructure\obj\Debug\net9.0\MicroservicioXia.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Infrastructure\obj\Debug\net9.0\MicroservicioXia.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Infrastructure\obj\Debug\net9.0\MicroservicioXia.Infrastructure.AssemblyInfo.cs
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Infrastructure\obj\Debug\net9.0\MicroservicioXia.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Infrastructure\obj\Debug\net9.0\MicroservicioXia.Infrastructure.sourcelink.json
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Infrastructure\bin\Debug\net9.0\MicroservicioXia.Infrastructure.deps.json
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Infrastructure\bin\Debug\net9.0\MicroservicioXia.Infrastructure.dll
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Infrastructure\bin\Debug\net9.0\MicroservicioXia.Infrastructure.pdb
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Infrastructure\bin\Debug\net9.0\MicroservicioXia.Core.dll
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Infrastructure\bin\Debug\net9.0\MicroservicioXia.Core.pdb
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Infrastructure\obj\Debug\net9.0\Microser.5AE01C6A.Up2Date
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Infrastructure\obj\Debug\net9.0\MicroservicioXia.Infrastructure.dll
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Infrastructure\obj\Debug\net9.0\refint\MicroservicioXia.Infrastructure.dll
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Infrastructure\obj\Debug\net9.0\MicroservicioXia.Infrastructure.pdb
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Infrastructure\obj\Debug\net9.0\ref\MicroservicioXia.Infrastructure.dll

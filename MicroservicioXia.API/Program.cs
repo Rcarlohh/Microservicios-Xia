@@ -2,6 +2,7 @@ using MicroservicioXia.Core.Interfaces;
 using MicroservicioXia.Infrastructure.Data;
 using MicroservicioXia.Infrastructure.Repositories;
 using MicroservicioXia.Application.Services;
+using MicroservicioXia.API;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -56,6 +57,19 @@ using (var scope = app.Services.CreateScope())
 {
     var securityQuestionRepository = scope.ServiceProvider.GetRequiredService<ISecurityQuestionTemplateRepository>();
     await DataInitializer.InitializeSecurityQuestions(securityQuestionRepository);
+}
+var url = "https://localhost:7226/swagger"; // O el puerto correcto según tu app
+
+try
+{
+    using var process = new System.Diagnostics.Process();
+    process.StartInfo.FileName = url;
+    process.StartInfo.UseShellExecute = true;
+    process.Start();
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"No se pudo abrir el navegador automáticamente: {ex.Message}");
 }
 
 app.Run();

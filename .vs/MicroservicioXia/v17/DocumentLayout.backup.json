@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\range\\source\\repos\\Microservicios-Xia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF8B94AF-7BD8-4312-B3F5-2A1E6883A75F}|MicroservicioXia.API\\MicroservicioXia.API.csproj|c:\\users\\range\\source\\repos\\microservicios-xia\\microservicioxia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF8B94AF-7BD8-4312-B3F5-2A1E6883A75F}|MicroservicioXia.API\\MicroservicioXia.API.csproj|solutionrelative:microservicioxia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37369E4B-726C-4FD1-8879-9813C45692EF}|MicroservicioXia.Application\\MicroservicioXia.Application.csproj|c:\\users\\range\\source\\repos\\microservicios-xia\\microservicioxia.application\\services\\securityquestionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37369E4B-726C-4FD1-8879-9813C45692EF}|MicroservicioXia.Application\\MicroservicioXia.Application.csproj|solutionrelative:microservicioxia.application\\services\\securityquestionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3C8FCD0-DEF0-419D-9DD6-542EB9CEC685}|MicroservicioXia.Core\\MicroservicioXia.Core.csproj|c:\\users\\range\\source\\repos\\microservicios-xia\\microservicioxia.core\\interfaces\\isecurityquestiontemplaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3C8FCD0-DEF0-419D-9DD6-542EB9CEC685}|MicroservicioXia.Core\\MicroservicioXia.Core.csproj|solutionrelative:microservicioxia.core\\interfaces\\isecurityquestiontemplaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3C8FCD0-DEF0-419D-9DD6-542EB9CEC685}|MicroservicioXia.Core\\MicroservicioXia.Core.csproj|c:\\users\\range\\source\\repos\\microservicios-xia\\microservicioxia.core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3C8FCD0-DEF0-419D-9DD6-542EB9CEC685}|MicroservicioXia.Core\\MicroservicioXia.Core.csproj|solutionrelative:microservicioxia.core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3C8FCD0-DEF0-419D-9DD6-542EB9CEC685}|MicroservicioXia.Core\\MicroservicioXia.Core.csproj|c:\\users\\range\\source\\repos\\microservicios-xia\\microservicioxia.core\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3C8FCD0-DEF0-419D-9DD6-542EB9CEC685}|MicroservicioXia.Core\\MicroservicioXia.Core.csproj|solutionrelative:microservicioxia.core\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3C8FCD0-DEF0-419D-9DD6-542EB9CEC685}|MicroservicioXia.Core\\MicroservicioXia.Core.csproj|c:\\users\\range\\source\\repos\\microservicios-xia\\microservicioxia.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3C8FCD0-DEF0-419D-9DD6-542EB9CEC685}|MicroservicioXia.Core\\MicroservicioXia.Core.csproj|solutionrelative:microservicioxia.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SecurityQuestionService.cs",
+              "DocumentMoniker": "C:\\Users\\range\\source\\repos\\Microservicios-Xia\\MicroservicioXia.Application\\Services\\SecurityQuestionService.cs",
+              "RelativeDocumentMoniker": "MicroservicioXia.Application\\Services\\SecurityQuestionService.cs",
+              "ToolTip": "C:\\Users\\range\\source\\repos\\Microservicios-Xia\\MicroservicioXia.Application\\Services\\SecurityQuestionService.cs",
+              "RelativeToolTip": "MicroservicioXia.Application\\Services\\SecurityQuestionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T05:10:40.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ISecurityQuestionTemplateRepository.cs",
+              "DocumentMoniker": "C:\\Users\\range\\source\\repos\\Microservicios-Xia\\MicroservicioXia.Core\\Interfaces\\ISecurityQuestionTemplateRepository.cs",
+              "RelativeDocumentMoniker": "MicroservicioXia.Core\\Interfaces\\ISecurityQuestionTemplateRepository.cs",
+              "ToolTip": "C:\\Users\\range\\source\\repos\\Microservicios-Xia\\MicroservicioXia.Core\\Interfaces\\ISecurityQuestionTemplateRepository.cs",
+              "RelativeToolTip": "MicroservicioXia.Core\\Interfaces\\ISecurityQuestionTemplateRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T05:00:39.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\range\\source\\repos\\Microservicios-Xia\\MicroservicioXia.Core\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "MicroservicioXia.Core\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\range\\source\\repos\\Microservicios-Xia\\MicroservicioXia.Core\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "MicroservicioXia.Core\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T05:00:37.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\range\\source\\repos\\Microservicios-Xia\\MicroservicioXia.Core\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "MicroservicioXia.Core\\DTOs\\UserDto.cs",
+              "ToolTip": "C:\\Users\\range\\source\\repos\\Microservicios-Xia\\MicroservicioXia.Core\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "MicroservicioXia.Core\\DTOs\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T05:00:29.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\range\\source\\repos\\Microservicios-Xia\\MicroservicioXia.Core\\Class1.cs",
+              "RelativeDocumentMoniker": "MicroservicioXia.Core\\Class1.cs",
+              "ToolTip": "C:\\Users\\range\\source\\repos\\Microservicios-Xia\\MicroservicioXia.Core\\Class1.cs",
+              "RelativeToolTip": "MicroservicioXia.Core\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T05:00:23.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\range\\source\\repos\\Microservicios-Xia\\MicroservicioXia.API\\Program.cs",
+              "RelativeDocumentMoniker": "MicroservicioXia.API\\Program.cs",
+              "ToolTip": "C:\\Users\\range\\source\\repos\\Microservicios-Xia\\MicroservicioXia.API\\Program.cs",
+              "RelativeToolTip": "MicroservicioXia.API\\Program.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAowDoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T04:59:34.964Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

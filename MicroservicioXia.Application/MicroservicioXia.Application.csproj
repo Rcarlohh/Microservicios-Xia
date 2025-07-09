@@ -1,6 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MicroservicioXia.Core\MicroservicioXia.Core.csproj" />
     <ProjectReference Include="..\MicroservicioXia.Infrastructure\MicroservicioXia.Infrastructure.csproj" />
   </ItemGroup>

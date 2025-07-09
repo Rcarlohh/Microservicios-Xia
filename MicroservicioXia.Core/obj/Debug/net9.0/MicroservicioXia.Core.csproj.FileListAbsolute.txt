@@ -2,3 +2,16 @@
 /home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Core/obj/Debug/net9.0/MicroservicioXia.Core.AssemblyInfoInputs.cache
 /home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Core/obj/Debug/net9.0/MicroservicioXia.Core.AssemblyInfo.cs
 /home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Core/obj/Debug/net9.0/MicroservicioXia.Core.csproj.CoreCompileInputs.cache
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Core\obj\Debug\net9.0\MicroservicioXia.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Core\obj\Debug\net9.0\MicroservicioXia.Core.AssemblyInfoInputs.cache
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Core\obj\Debug\net9.0\MicroservicioXia.Core.AssemblyInfo.cs
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Core\obj\Debug\net9.0\MicroservicioXia.Core.csproj.CoreCompileInputs.cache
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Core\obj\Debug\net9.0\MicroservicioXia.Core.sourcelink.json
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Core\bin\Debug\net9.0\MicroservicioXia.Core.deps.json
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Core\bin\Debug\net9.0\MicroservicioXia.Core.dll
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Core\bin\Debug\net9.0\MicroservicioXia.Core.pdb
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Core\obj\Debug\net9.0\MicroservicioXia.Core.csproj.AssemblyReference.cache
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Core\obj\Debug\net9.0\MicroservicioXia.Core.dll
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Core\obj\Debug\net9.0\refint\MicroservicioXia.Core.dll
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Core\obj\Debug\net9.0\MicroservicioXia.Core.pdb
+C:\Users\range\Source\Repos\Microservicios-Xia\MicroservicioXia.Core\obj\Debug\net9.0\ref\MicroservicioXia.Core.dll

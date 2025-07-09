@@ -1,0 +1,4 @@
+/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Core/obj/Debug/net9.0/MicroservicioXia.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Core/obj/Debug/net9.0/MicroservicioXia.Core.AssemblyInfoInputs.cache
+/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Core/obj/Debug/net9.0/MicroservicioXia.Core.AssemblyInfo.cs
+/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Core/obj/Debug/net9.0/MicroservicioXia.Core.csproj.CoreCompileInputs.cache

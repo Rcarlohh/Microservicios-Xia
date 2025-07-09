@@ -1,0 +1,6 @@
+@MicroservicioXia.API_HostAddress = http://localhost:5109
+
+GET {{MicroservicioXia.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bmz1mNiUXDc=",
+  "success": true,
+  "projectFilePath": "/home/chars/Escritorio/MIcroservicio_Xia/MicroservicioXia.Core/MicroservicioXia.Core.csproj",
+  "expectedPackageFiles": [
+    "/home/chars/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.4/microsoft.aspnetcore.app.ref.9.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
